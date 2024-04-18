@@ -13,6 +13,17 @@
  <form action="" id="form">
  <h1>Veebipõhine ürituse registreerimisvorm</h1>
  <div class="input-group">
+    <div class="input-group">
+        <label for="firstName">Eesnimi <span>*</span></label>
+        <input type="text" id="firstName" name="firstName" required aria-describedby="firstName-error">
+        <div class="error" id="firstName-error" role="alert">Palun sisesta oma eesnimi.</div>
+    </div>
+    
+    <div class="input-group">
+        <label for="lastName">Perekonnanimi <span>*</span></label>
+        <input type="text" id="lastName" name="lastName" required aria-describedby="lastName-error">
+        <div class="error" id="lastName-error" role="alert">Palun sisesta oma perekonnanimi.</div>
+    </div>  
  <label for="username">Username</label>
  <input type="text" id="username" name="username" required aria-describedby="username-error">
  <div class="error" id="username-error" role="alert">Palun sisesta kasutajanimi.</div>

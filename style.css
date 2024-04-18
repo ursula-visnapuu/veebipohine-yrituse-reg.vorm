@@ -46,9 +46,13 @@ h1{
 }
 
 .input-group input:focus{
-    outline:0;
+    outline: 2px solid blue;
 }
 
+.error{
+    color: red;
+    font-size: 0.8em;
+}
 .input-group .error{
     color:rgb(242, 18, 18);
     font-size:16px;

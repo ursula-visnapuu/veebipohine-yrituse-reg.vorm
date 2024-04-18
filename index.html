@@ -14,8 +14,8 @@
  <h1>Veebipõhine ürituse registreerimisvorm</h1>
  <div class="input-group">
  <label for="username">Username</label>
- <input type="text" id="username" name="username">
- <div class="error"></div>
+ <input type="text" id="username" name="username" required aria-describedby="username-error">
+ <div class="error" id="username-error" role="alert">Palun sisesta kasutajanimi.</div>
  </div>
  <div class="input-group">
  <label for="email">Email</label>

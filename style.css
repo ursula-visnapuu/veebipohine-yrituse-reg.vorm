@@ -9,6 +9,10 @@ body {
     background-color: rgba(138, 126, 126, 0.5); /* Lisa taustavärv, mis annab läbipaistvuse */
     backdrop-filter: blur(20px); /* Lisa taustale hägususe efekt */
 }
+#form h1{
+    text-align: center;
+    color:#792099;
+}
 
 #form{
     width:400px;
@@ -18,13 +22,28 @@ body {
     padding:30px;
 }
 
-h1{
-    text-align: center;
-    color:#792099;
-}
+
+
+
 
 h1, #form {
     font-family: "Open Sans", sans-serif;
+}
+
+h1, #aitah-leht {
+    color: aliceblue;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Tagab, et sisu on vertikaalselt keskel */
+    margin: 0;
+}
+
+.content {
+    text-align: center; /* Asetab sisu horisontaalselt keskele */
 }
 
 

@@ -6,8 +6,31 @@ body {
     background-repeat: no-repeat; 
     background-position: center; 
     background-attachment: fixed; 
-    background-color: rgba(138, 126, 126, 0.5); /* Lisa taustavärv, mis annab läbipaistvuse */
-    backdrop-filter: blur(20px); /* Lisa taustale hägususe efekt */
+    background-color: rgba(138, 126, 126, 0.5); 
+    backdrop-filter: blur(20px); 
+}
+
+.background-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('taust.jpg');
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+    opacity: 0.5; 
+    z-index: -1; 
+}
+
+.background-image::after {
+    content: "Konverentsiruum";
+    color: white; 
+    font-size: 16px; 
+    position: absolute;
+    bottom: 10px; 
+    left: 10px; 
 }
 #form h1{
     text-align: center;

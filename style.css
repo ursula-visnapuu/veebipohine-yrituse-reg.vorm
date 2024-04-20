@@ -10,6 +10,16 @@ body {
     backdrop-filter: blur(20px); 
 }
 
+.container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 
 
@@ -39,12 +49,12 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Tagab, et sisu on vertikaalselt keskel */
+    height: 100vh; 
     margin: 0;
 }
 
 .content {
-    text-align: center; /* Asetab sisu horisontaalselt keskele */
+    text-align: center; 
 }
 
 

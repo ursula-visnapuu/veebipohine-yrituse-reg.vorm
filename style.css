@@ -32,6 +32,7 @@ body {
     width:400px;
     margin:20vh auto 0 auto;
     background-color: whitesmoke;
+    backdrop-filter: blur(20px); 
     border-radius: 5px;
     padding:30px;
 }

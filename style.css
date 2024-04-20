@@ -23,8 +23,7 @@ h1{
     color:#792099;
 }
 
-h1, #form {
-    font-family: 'Open Sans', sans-serif; /* Kasutage siin valitud fonti */
+h1, #form {/* Kasutage siin valitud fonti */
 }
 
 // <uniquifier>: Use a unique and descriptive class name

@@ -12,14 +12,7 @@ body {
 
 
 
-.background-image::after {
-    content: "Konverentsiruum";
-    color: white; 
-    font-size: 16px; 
-    position: absolute;
-    bottom: 10px; 
-    left: 10px; 
-}
+
 #form h1{
     text-align: center;
     color:#792099;

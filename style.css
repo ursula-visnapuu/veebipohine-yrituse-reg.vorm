@@ -1,12 +1,12 @@
 
 
 body {
-    background-image: url('taustapilt.jpg');
+    background-image: url('taust.jpg');
     background-size: cover; 
     background-repeat: no-repeat; 
     background-position: center; 
     background-attachment: fixed; 
-    background-color: rgba(255, 255, 255, 0.5); /* Lisa taustavärv, mis annab läbipaistvuse */
+    background-color: rgba(138, 126, 126, 0.5); /* Lisa taustavärv, mis annab läbipaistvuse */
     backdrop-filter: blur(10px); /* Lisa taustale hägususe efekt */
 }
 

@@ -1,6 +1,7 @@
 const form = document.querySelector('#form')
 const username = document.querySelector('#username');
 const email = document.querySelector('#email');
+const tel = document.querySelector('#tel');
 const password = document.querySelector('#password');
 const cpassword = document.querySelector('#cpassword');
 
@@ -14,6 +15,7 @@ form.addEventListener('submit',(e)=>{
 function validateInputs(){
     const usernameVal = username.value.trim()
     const emailVal = email.value.trim();
+    const telVal = tel.value.trim();
     const passwordVal = password.value.trim();
     const cpasswordVal = cpassword.value.trim();
     let success = true
@@ -28,23 +30,23 @@ function validateInputs(){
 
     if(emailVal===''){
         success = false;
-        setError(email,'Email is required')
+        setError(email,'Meiliaadress on nõutud')
     }
     else if(!validateEmail(emailVal)){
         success = false;
-        setError(email,'Please enter a valid email')
+        setError(email,'Palun sisesta korrektne meiliaadress')
     }
     else{
         setSuccess(email)
     }
 
-    if(passwordVal === ''){
+       if(passwordVal === ''){
         success= false;
-        setError(password,'Password is required')
+        setError(password,'Salasõna on nõutud')
     }
     else if(passwordVal.length<8){
         success = false;
-        setError(password,'Password must be atleast 8 characters long')
+        setError(password,'Salasõna peab olema vähemalt 8 tähemärki pikk')
     }
     else{
         setSuccess(password)
@@ -52,11 +54,11 @@ function validateInputs(){
 
     if(cpasswordVal === ''){
         success = false;
-        setError(cpassword,'Confirm password is required')
+        setError(cpassword,'Salasõna kinnitamine on nõutud')
     }
     else if(cpasswordVal!==passwordVal){
         success = false;
-        setError(cpassword,'Password does not match')
+        setError(cpassword,'Sisestatud salasõna ei ühti')
     }
     else{
         setSuccess(cpassword)
@@ -91,3 +93,13 @@ const validateEmail = (email) => {
         /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
       );
   };
+
+  <script>
+    document.getElementById("form").addEventListener("submit", function(event) {
+        // Vältige vormi tavapärast saatmist
+        event.preventDefault();
+
+        // Suunake kasutaja järgmisele lehele
+        window.location.href = "aitah-leht.html"; 
+    });
+</script>

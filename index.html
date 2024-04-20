@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="est">
+<html lang="et">
 <head>
  <meta charset="UTF-8">
  <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,7 +13,7 @@
 </head>
 <body>
      <div class="container">
- <form action="" id="form">
+ <form action="#" id="form">
  <h1>Veebipõhine ürituse registreerimise vorm</h1>
  <div class="input-group">
     <div class="input-group">
@@ -28,13 +28,18 @@
         <div class="error" id="lastName-error" role="alert">Palun sisesta oma perekonnanimi.</div>
     </div>  
     <div class="input-group">
-        <label for="email">E-mail</label>
-        <input type="text" id="email" name="email" >
-        <div class="error"></div>
+        <label for="email">E-mail <span>*</span></label>
+        <input type="email" id="email" name="email" required aria-describedby="email-error">
+        <div class="error" id="email-error" role="alert">Palun sisesta oma meiliaadress.</div>
         </div>
+        <div class="input-group">
+            <label for="tel">Telefoninumber</label>
+            <input type="tel" id="tel" name="tel" >
+            <div class="error"></div>
+            </div>
  <label for="username">Kasutajanimi</label>
- <input type="text" id="username" name="username" required aria-describedby="username-error">
- <div class="error" id="username-error" role="alert">Palun sisesta kasutajanimi.</div>
+ <input type="text" id="username" name="username" >
+ <div class="error"></div> 
  </div>
  
  <div class="input-group">
